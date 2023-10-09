@@ -113,16 +113,7 @@ const LoginPage = () => {
                      icon={<i className="fi fi-sr-lock"></i>}
                   />
                </div>
-               <button
-                  type="button"
-                  onClick={() => {
-                     router.replace("/forgot-password");
-                  }}
-               >
-                  <p className="font-semibold text-primary/60 italic text-sm p-2 text-right">
-                     Forgot password?
-                  </p>
-               </button>
+               <button className="block" onClick={()=>{router.push('/forgot-password')}}>go to login</button>
             </div>
             <div className="mb-10">
                <Button
