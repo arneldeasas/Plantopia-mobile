@@ -75,7 +75,7 @@ const LoginPage = () => {
             <div>
                <div className="text-center">
                   <h1 className="text-4xl font-semibold text-bgprimary mt-10">
-                     WELCOME BACsK!
+                     WELCOMweE BACK!
                   </h1>
                   <button onClick={()=>{setCount(count+1)}}>add {count}</button>
                   <p className="text-primary/60">Login to your account</p>
@@ -122,9 +122,9 @@ const LoginPage = () => {
                      <span className="italic  text-primary/60">
                         Don't have an account?{" "}
                      </span>{" "}
-                     <Link href={"/signup"}>
-                        <span className="text-bgprimary p-2">Sign up here</span>
-                     </Link>
+                    
+                        <span onClick={router.push('/signup')} className="text-bgprimary p-2">Sign up here</span>
+                  
                   </p>
                </div>
             </div>
