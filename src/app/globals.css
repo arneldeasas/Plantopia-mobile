@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~@flaticon/flaticon-uicons/css/Solid/Rounded";
+
 /* *{
   @apply outline-red-400 outline-dotted outline-1 
 } */
