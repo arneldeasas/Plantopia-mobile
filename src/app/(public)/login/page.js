@@ -127,12 +127,13 @@ const LoginPage = () => {
                      <span className="italic  text-primary/60">
                         Don't have an account?{" "}
                      </span>{" "}
-                     <span
-                        onClick={()=>{router.push("/signup")}}
-                        className="text-bgprimary p-2"
+                     <button
+                        onClick={() => {
+                           router.push("/signup");
+                        }}
                      >
-                        Sign up here
-                     </span>
+                        <span className="text-bgprimary p-2">Sign up here</span>
+                     </button>
                   </p>
                </div>
             </div>
