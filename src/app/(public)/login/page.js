@@ -128,6 +128,7 @@ const LoginPage = () => {
                         Don't have an account?{" "}
                      </span>{" "}
                      <button
+                     type="button"
                         onClick={() => {
                            router.push("/signup");
                         }}
