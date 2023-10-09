@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { instance } from "../../axios/axios";
 import Button from "@/app/components/Button";
@@ -17,6 +17,10 @@ const LoginPage = () => {
       password: "",
    });
 
+   useEffect(() => {
+      router.prefetch("/signup");
+      router.prefetch("/forgot-password");
+   }, []);
    const handleSubmit = async (e) => {
       try {
          e.preventDefault();
@@ -109,10 +113,15 @@ const LoginPage = () => {
                      icon={<i className="fi fi-sr-lock"></i>}
                   />
                </div>
-               <button type="button" onClick={()=>{router.replace('/forgot-password')}}>
-               <p className="font-semibold text-primary/60 italic text-sm p-2 text-right">
-                  Forgot password?
-               </p>
+               <button
+                  type="button"
+                  onClick={() => {
+                     router.replace("/forgot-password");
+                  }}
+               >
+                  <p className="font-semibold text-primary/60 italic text-sm p-2 text-right">
+                     Forgot password?
+                  </p>
                </button>
             </div>
             <div className="mb-10">
@@ -130,7 +139,7 @@ const LoginPage = () => {
                         Don't have an account?{" "}
                      </span>{" "}
                      <button
-                     type="button"
+                        type="button"
                         onClick={() => {
                            router.push("/signup");
                         }}
