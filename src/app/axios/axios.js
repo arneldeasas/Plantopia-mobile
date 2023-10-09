@@ -1,6 +1,6 @@
 import axios from "axios";
 export const instance = axios.create({
-   baseURL: `${process.env.NEXT_PUBLIC_API_BASEURL}`,
+   baseURL: `https://plantopia-sepia.vercel.app`,
    
     withCredentials:false
 });

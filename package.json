@@ -13,6 +13,7 @@
     "@capacitor/android": "^5.3.0",
     "@capacitor/camera": "^5.0.7",
     "@capacitor/core": "^5.3.0",
+    "@capacitor/preferences": "^5.0.6",
     "@flaticon/flaticon-uicons": "^2.4.0",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.1",

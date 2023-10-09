@@ -5,10 +5,12 @@ import { Camera, CameraResultType } from '@capacitor/camera';
 import { useState } from 'react';
 import { Photo } from '@capacitor/camera';
 import { useRouter } from 'next/navigation';
+import { Preferences } from '@capacitor/preferences';
 export default function Home() {
   const router = useRouter()
   const [imgUrl,setImgUrl] = useState('')
   const takePicture = async () => {
+    
     const image = await Camera.getPhoto({
       quality: 90,
       allowEditing: true,

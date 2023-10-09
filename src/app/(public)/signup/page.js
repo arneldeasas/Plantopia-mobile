@@ -57,7 +57,7 @@ const SignupPage = () => {
             <div>
                <div className="text-center">
                   <h1 className="text-4xl font-semibold text-bgprimary mt-10">
-                     Sign Up
+                     Sign Ups
                   </h1>
                   <p className="text-primary/60">Create new account</p>
                </div>
@@ -128,7 +128,7 @@ const SignupPage = () => {
                   />
                </div>
             </div>
-            <div className="mb-10">
+            <div className="my-10">
                <Button
                   isPending={isPending}
                   loadingname={"signing up"}
