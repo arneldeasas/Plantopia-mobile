@@ -113,7 +113,7 @@ const LoginPage = () => {
                      icon={<i className="fi fi-sr-lock"></i>}
                   />
                </div>
-               <button className="block" onClick={()=>{router.push('/forgot-password')}}>go to login</button>
+               <button type="button" className="block" onClick={()=>{router.push('/forgot-password')}}>go to login</button>
             </div>
             <div className="mb-10">
                <Button
