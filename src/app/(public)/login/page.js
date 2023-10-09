@@ -113,9 +113,24 @@ const LoginPage = () => {
                      icon={<i className="fi fi-sr-lock"></i>}
                   />
                </div>
-               <button type="button" className="block" onClick={()=>{router.push('/forgot-password')}}>go to login</button>
+
+               <a href="/forgot-password">
+                  <p className="font-semibold text-primary/60 italic text-sm p-2 text-right">
+                     Forgot password?
+                  </p>
+               </a>
             </div>
             <div className="mb-10">
+               <a href="/test">
+                  <Button
+                     isPending={isPending}
+                     loadingName={"signing up"}
+                     type="button"
+                     buttonStyle={"primary"}
+                     className={"w-full py-2 "}
+                     name={"take pic"}
+                  />
+               </a>
                <Button
                   isPending={isPending}
                   loadingName={"signing up"}
@@ -129,14 +144,9 @@ const LoginPage = () => {
                      <span className="italic  text-primary/60">
                         Don't have an account?{" "}
                      </span>{" "}
-                     <button
-                        type="button"
-                        onClick={() => {
-                           router.push("/signup");
-                        }}
-                     >
+                     <a href="/signup">
                         <span className="text-bgprimary p-2">Sign up here</span>
-                     </button>
+                     </a>
                   </p>
                </div>
             </div>

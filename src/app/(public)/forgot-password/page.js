@@ -51,13 +51,13 @@ const ForgotPasswordPage = () => {
                   className={"w-full py-2 "}
                   name={"Confirm"}
                />
-               <Button
+               <a href="/login"><Button
                   type="button"
-                  onClick={()=>{router.push('/login')}}
+                
                   buttonStyle={"secondary"}
                   className={"w-full py-2 mt-5"}
                   name={"Go back to login"}
-               />
+               /></a>
             </div>
          </form>
       </div>
