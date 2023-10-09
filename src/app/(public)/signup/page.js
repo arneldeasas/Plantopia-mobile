@@ -147,9 +147,9 @@ const SignupPage = () => {
                      <span className="italic  text-primary/60">
                         Already have an account?{" "}
                      </span>{" "}
-                     <Link href={"/login"}>
+                     <a href={"/login"}>
                         <span className="text-bgprimary p-2">Login here</span>
-                     </Link>
+                     </a>
                   </p>
                </div>
             </div>
