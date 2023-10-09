@@ -4,14 +4,14 @@ import { useState } from "react";
 import { instance } from "../../axios/axios";
 import Button from "@/app/components/Button";
 import InputField from "@/app/components/InputField";
-import Link from "next/link";
+
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
-import { CapacitorHttp } from "@capacitor/core";
+
 const LoginPage = () => {
-   const router = useRouter()
+   const router = useRouter();
    const [isPending, setIsPending] = useState(false);
-   const [count,setCount] = useState(0)
+   const [count, setCount] = useState(0);
    const [credential, setCredential] = useState({
       email: "",
       password: "",
@@ -21,7 +21,7 @@ const LoginPage = () => {
       try {
          e.preventDefault();
          setIsPending(true);
-        /*  const options = {
+         /*  const options = {
             url: 'http://localhost:3001/api/account/login',
             headers: { 'Content-Type': 'application/json' },
             data: credential,
@@ -31,12 +31,12 @@ const LoginPage = () => {
             router.push('/')
           }
         console.log(res); */
-          const res = await instance.post('/api/account/login',credential)
-          console.log(res)
-          if(res.data.message==='success'){
-            router.push('/')
-          }
-      /*   const res = await fetch('http://localhost:3001/api/account/login',{
+         const res = await instance.post("/api/account/login", credential);
+         console.log(res);
+         if (res.data.message === "success") {
+            router.push("/");
+         }
+         /*   const res = await fetch('http://localhost:3001/api/account/login',{
          method:'POST',
          body: JSON.stringify(credential),
          headers:{
@@ -47,9 +47,8 @@ const LoginPage = () => {
         if(message.message==='success'){
          router.push('/')
         } */
-       // setMessage(message?.message)
+         // setMessage(message?.message)
       } catch (error) {
-         
          setIsPending(false);
          toast.error(error?.response?.data?.message, {
             position: "top-right",
@@ -77,7 +76,13 @@ const LoginPage = () => {
                   <h1 className="text-4xl font-semibold text-bgprimary mt-10">
                      WELCOMweE BACK!
                   </h1>
-                  <button onClick={()=>{setCount(count+1)}}>add {count}</button>
+                  <button
+                     onClick={() => {
+                        setCount(count + 1);
+                     }}
+                  >
+                     add {count}
+                  </button>
                   <p className="text-primary/60">Login to your account</p>
                </div>
                <div className="flex flex-col gap-6 mt-10">
@@ -122,9 +127,12 @@ const LoginPage = () => {
                      <span className="italic  text-primary/60">
                         Don't have an account?{" "}
                      </span>{" "}
-                    
-                        <span onClick={router.push('/signup')} className="text-bgprimary p-2">Sign up here</span>
-                  
+                     <span
+                        onClick={router.push("/signup")}
+                        className="text-bgprimary p-2"
+                     >
+                        Sign up here
+                     </span>
                   </p>
                </div>
             </div>
