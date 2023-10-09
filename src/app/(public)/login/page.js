@@ -136,7 +136,7 @@ const LoginPage = () => {
                   loadingName={"signing up"}
                   type="submit"
                   buttonStyle={"primary"}
-                  className={"w-full py-2 "}
+                  className={"w-full py-2 mt-5"}
                   name={"Login"}
                />
                <div className="mt-2 font-semibold text-sm">

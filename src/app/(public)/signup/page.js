@@ -33,7 +33,7 @@ const SignupPage = () => {
       } catch (error) {
          console.log(error);
          setIsPending(false);
-               toast.error(error.response.data.message, {
+               toast.error(error?.response?.data?.message, {
                   position: "top-right",
                   autoClose: 5000,
                   hideProgressBar: false,
