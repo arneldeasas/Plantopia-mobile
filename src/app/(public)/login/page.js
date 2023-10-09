@@ -128,7 +128,7 @@ const LoginPage = () => {
                         Don't have an account?{" "}
                      </span>{" "}
                      <span
-                        onClick={router.push("/signup")}
+                        onClick={()=>{router.push("/signup")}}
                         className="text-bgprimary p-2"
                      >
                         Sign up here
