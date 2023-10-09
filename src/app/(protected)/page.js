@@ -11,7 +11,7 @@ const HomePage = () => {
     return ( 
         <div>
             Welcome to Homeee23!
-            <button className="block" onClick={()=>{router.push('/login')}}>go to login</button>
+            <button className="block" onClick={()=>{router.push('/signup')}}>go to login</button>
 
         
         </div>
