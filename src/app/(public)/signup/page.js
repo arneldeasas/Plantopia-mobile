@@ -57,7 +57,7 @@ const SignupPage = () => {
             <div>
                <div className="text-center">
                   <h1 className="text-4xl font-semibold text-bgprimary mt-10">
-                     Sign Ups
+                     Sign Up
                   </h1>
                   <p className="text-primary/60">Create new account</p>
                </div>

@@ -78,7 +78,7 @@ const LoginPage = () => {
             <div>
                <div className="text-center">
                   <h1 className="text-4xl font-semibold text-bgprimary mt-10">
-                     WELCOMweE BACK!
+                     WELCOME BACK!
                   </h1>
                   <button
                      onClick={() => {
